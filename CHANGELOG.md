@@ -1,5 +1,14 @@
 # Changes for Datasplash
 
+## [Unreleased]
+
+### Added
+
+### Changed
+
+### Fixed
+
+
 ## [0.7.36] - 2026-07-04
 ### Changed
 * bump beam to 2.73.0 - final version to support Java 8.
