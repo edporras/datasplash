@@ -1,13 +1,9 @@
 # Changes for Datasplash
 
-## [Unreleased]
-
-### Added
-
+## [0.8.0] - 2026-07-09
 ### Changed
-
-### Fixed
-
+* bump beam to 2.74.0
+* set java 11 as target
 
 ## [0.7.36] - 2026-07-04
 ### Changed
@@ -349,7 +345,8 @@
 - Add pubsub namespace #6 (Thanks to @MartinSahlen)
 - Put slf4j deps in :dev profiles #8 (Thanks to @torbjornvatn)
 
-[Unreleased]: https://github.com/ngrunwald/datasplash/0.7.36...devel
+[Unreleased]: https://github.com/ngrunwald/datasplash/0.8.0...devel
+[0.8.0]: https://github.com/ngrunwald/datasplash/-/compare/0.7.36...0.8.0
 [0.7.36]: https://github.com/ngrunwald/datasplash/-/compare/0.7.35...0.7.36
 [0.7.35]: https://github.com/ngrunwald/datasplash/-/compare/0.7.34...0.7.35
 [0.7.34]: https://github.com/ngrunwald/datasplash/-/compare/0.7.33...0.7.34
