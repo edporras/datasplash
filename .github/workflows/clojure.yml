@@ -29,7 +29,11 @@ jobs:
         cli: 1.11.4.1474
         lein: 2.12.0
         cljfmt: latest
-          
+
+    - name: Extract BEAM dep version
+      shell: bash
+      run: echo "BEAM_SDK_VERSION=$(grep org.apache.beam/beam-sdks-java-core project.clj | awk -F '\"' '{print $2;}')" >> $GITHUB_ENV
+
     # Optional step:
     - name: Cache clojure dependencies
       uses: actions/cache@v5
@@ -39,9 +43,9 @@ jobs:
           ~/.gitlibs
           ~/.deps.clj
         # List all files containing dependencies:
-        key: cljdeps-${{ hashFiles('project.clj') }}
+        key: cljdeps-${{ github.event.repository.name }}-${{ env.BEAM_SDK_VERSION }}
         restore-keys: cljdeps-
-          
+
     - name: Lint
       run: lein cljfmt check
 
