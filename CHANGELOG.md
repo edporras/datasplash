@@ -5,6 +5,7 @@
 ### Added
 
 ### Changed
+* bump charred to 1.041.
 
 ### Fixed
 
